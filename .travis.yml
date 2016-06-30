@@ -19,6 +19,14 @@ matrix:
       compiler: gcc
       addons:
         apt: {sources: ['ubuntu-toolchain-r-test'], packages: ['g++-6']}
+    - env: LUA_VERSION=5.3.3 COMPILER=clang++-3.7
+      compiler: clang
+      addons:
+        apt: {sources: ['llvm-toolchain-precise-3.7'], packages: ['clang-3.7']}
+    - env: LUA_VERSION=5.3.3 COMPILER=clang++-3.8
+      compiler: clang
+      addons:
+        apt: {sources: ['llvm-toolchain-precise-3.8'], packages: ['clang-3.8']}
 
     # Lua 5.2
     - env: LUA_VERSION=5.2.4 COMPILER=g++-4.8
@@ -37,6 +45,14 @@ matrix:
       compiler: gcc
       addons:
         apt: {sources: ['ubuntu-toolchain-r-test'], packages: ['g++-6']}
+    - env: LUA_VERSION=5.2.4 COMPILER=clang++-3.7
+      compiler: clang
+      addons:
+        apt: {sources: ['llvm-toolchain-precise-3.7'], packages: ['clang-3.7']}
+    - env: LUA_VERSION=5.2.4 COMPILER=clang++-3.8
+      compiler: clang
+      addons:
+        apt: {sources: ['llvm-toolchain-precise-3.8'], packages: ['clang-3.8']}
 
     # Lua 5.1
     - env: LUA_VERSION=5.1.5 COMPILER=g++-4.8
@@ -55,6 +71,14 @@ matrix:
       compiler: gcc
       addons:
         apt: {sources: ['ubuntu-toolchain-r-test'], packages: ['g++-6']}
+    - env: LUA_VERSION=5.1.5 COMPILER=clang++-3.7
+      compiler: clang
+      addons:
+        apt: {sources: ['llvm-toolchain-precise-3.7'], packages: ['clang-3.7']}
+    - env: LUA_VERSION=5.1.5 COMPILER=clang++-3.8
+      compiler: clang
+      addons:
+        apt: {sources: ['llvm-toolchain-precise-3.8'], packages: ['clang-3.8']}
 
 cache:
   directories:
